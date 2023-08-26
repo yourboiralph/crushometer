@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, #FF8989, #FCAEAE);
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    background: #FF6666;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container h1{
+    text-align: center;
+}
+
+#heart{
+    cursor: pointer;
+}
+
+#heart img{
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.user{
+    padding: 30px 0;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: #FCAEAE;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.crush{
+    padding-top: 30px;
+}
+
+#heart{
+    position: relative;
+}
+
+#heart h1{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+.prompt{
+    width: 100%;
+    background: #222;
+    display: none;
+}
+
+.prompt h1{
+    color: red;
+}
+
+.loading{
+    color: #eee;
+}
+
+.loading .icon{
+    display: inline-block;
+    color: #eee;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
