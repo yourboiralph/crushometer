@@ -9,7 +9,7 @@ heart.addEventListener("click", (e) => {
     if(names.value === "" || crushname.value === ""){  
         document.getElementById("prompt").style.display = "block";
     }
-    else if(names.value === "ralph" || names.value === "bambie" && crushname.value === "bambie" || crushname.value === "ralph"){
+    else if(names.value === "ralph" && crushname.value === "bambie" || names.value === "bambie" && crushname.value === "ralph"){
         percentage.classList.add("loading");
         percentage.innerHTML = "<span class='icon'>&#8635;</span>"; 
         setTimeout(()=>{
@@ -17,12 +17,16 @@ heart.addEventListener("click", (e) => {
         }, 2000);
         document.getElementById("prompt").style.display = "none";
     }
-    else if(names.value === "Reynaldo" && crushname.value === "sarah"){
+    else if(names.value === "reynaldo" && crushname.value === "sarah"){
         let chance = Math.floor(Math.random() * 2) + 1;
         percentage.classList.add("loading");
         percentage.innerHTML = "<span class='icon'>&#8635;</span>";
         setTimeout(() => {
-            
+            if(chance % 2 == 0){
+                percentage.innerText = "100%";
+            }else{
+                percentage.innerText = "0%";
+            }
         }, 2000);
         document.getElementById("prompt").style.display = "none";
     }
