@@ -9,7 +9,7 @@ heart.addEventListener("click", (e) => {
     if(names.value === "" || crushname.value === ""){  
         document.getElementById("prompt").style.display = "block";
     }
-    else if(names.value === "ralph" && crushname.value === "bambie" || names.value === "bambie" && crushname.value === "ralph"){
+    else if(names.value === "ralph" && crushname.value === "HAHAHAHA akoa nalang gi delete kay delikado" || names.value === "HAHAHAHA akoa nalang gi delete kay delikado" && crushname.value === "ralph"){
         percentage.classList.add("loading");
         percentage.innerHTML = "<span class='icon'>&#8635;</span>"; 
         setTimeout(()=>{
@@ -17,6 +17,9 @@ heart.addEventListener("click", (e) => {
         }, 2000);
         document.getElementById("prompt").style.display = "none";
     }
+
+
+    //SARAH NAVALUNA HAHAHAHAHAHHAH PATAY KA BAJ!
     else if(names.value === "reynaldo" && crushname.value === "sarah"){
         let chance = Math.floor(Math.random() * 2) + 1;
         percentage.classList.add("loading");
